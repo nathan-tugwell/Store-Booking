@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1028C42822AC47007DE85B /* BookingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1028C32822AC47007DE85B /* BookingData.swift */; };
+		5D1028C62822B03F007DE85B /* BookingDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1028C52822B03F007DE85B /* BookingDetailScreen.swift */; };
+		5D91CA9F282161C90059B70C /* BookingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D91CA9E282161C90059B70C /* BookingListView.swift */; };
 		5DD5257E2808124C00CC7D7D /* StoreBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5257D2808124C00CC7D7D /* StoreBookingApp.swift */; };
-		5DD525802808124C00CC7D7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5257F2808124C00CC7D7D /* ContentView.swift */; };
+		5DD525802808124C00CC7D7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5257F2808124C00CC7D7D /* LoginView.swift */; };
 		5DD525822808125000CC7D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD525812808125000CC7D7D /* Assets.xcassets */; };
 		5DD525852808125000CC7D7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD525842808125000CC7D7D /* Preview Assets.xcassets */; };
 		5DD5258F2808125100CC7D7D /* StoreBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD5258E2808125100CC7D7D /* StoreBookingTests.swift */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D1028C32822AC47007DE85B /* BookingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingData.swift; sourceTree = "<group>"; };
+		5D1028C52822B03F007DE85B /* BookingDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailScreen.swift; sourceTree = "<group>"; };
+		5D91CA9E282161C90059B70C /* BookingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingListView.swift; sourceTree = "<group>"; };
 		5DD5257A2808124C00CC7D7D /* StoreBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD5257D2808124C00CC7D7D /* StoreBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreBookingApp.swift; sourceTree = "<group>"; };
-		5DD5257F2808124C00CC7D7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5DD5257F2808124C00CC7D7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5DD525812808125000CC7D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DD525842808125000CC7D7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5DD5258A2808125100CC7D7D /* StoreBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D1028C12822AC1D007DE85B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DD5257F2808124C00CC7D7D /* LoginView.swift */,
+				5D91CA9E282161C90059B70C /* BookingListView.swift */,
+				5D1028C52822B03F007DE85B /* BookingDetailScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D1028C22822AC30007DE85B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5D1028C32822AC47007DE85B /* BookingData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		5DD525712808124C00CC7D7D = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				5DD5257D2808124C00CC7D7D /* StoreBookingApp.swift */,
-				5DD5257F2808124C00CC7D7D /* ContentView.swift */,
+				5D1028C12822AC1D007DE85B /* View */,
+				5D1028C22822AC30007DE85B /* Data */,
 				5DD525812808125000CC7D7D /* Assets.xcassets */,
 				5DD525832808125000CC7D7D /* Preview Content */,
 			);
@@ -257,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DD525802808124C00CC7D7D /* ContentView.swift in Sources */,
+				5DD525802808124C00CC7D7D /* LoginView.swift in Sources */,
 				5DD5257E2808124C00CC7D7D /* StoreBookingApp.swift in Sources */,
+				5D91CA9F282161C90059B70C /* BookingListView.swift in Sources */,
+				5D1028C62822B03F007DE85B /* BookingDetailScreen.swift in Sources */,
+				5D1028C42822AC47007DE85B /* BookingData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
